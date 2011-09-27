@@ -5,7 +5,7 @@ $db = JFactory::getDbo();
 $search = $db->getEscaped(JRequest::getVar('fabfinder'));
 $query = $db->getQuery(true);
 
-$query->select('CONCAT(title, \' (k2 article)\' ) AS title, \'\' AS text, CONCAT(\'index.php?option=com_k2&view=item&cid=\', id) AS href ')
+$query->select('CONCAT(title, \' (<em>k2 article</em>)\' ) AS title, \'\' AS text, CONCAT(\'index.php?option=com_k2&view=item&cid=\', id) AS href ')
 ->from('#__k2_items')
 ->where('title LIKE '.$db->Quote('%'.$search.'%'))
 ->limit($max);
