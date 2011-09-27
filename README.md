@@ -1,5 +1,6 @@
 This system plugin and admin module allow you to search from within your Joomal1.7 administration pages. 
 You can search for:
+
 * Fabrik records
 * Content articles
 * Users
@@ -13,7 +14,7 @@ You can search for:
 * RS Events
 * Users
 * Virtuemart products
-* 
+
 
 Search types can be added by adding a PHP file to 
 plugins/system/fabfinder/adaptors/
@@ -25,6 +26,6 @@ $tmp should be an array of objects, each object should have the following proper
 * title 
 * text
 * href
-* 
-* generally $tmp is produced by a database query- see plugins/system/fabfinder/adaptors/content.php for an example.
-                                                - 
+
+ generally $tmp is produced by a database query- see plugins/system/fabfinder/adaptors/content.php for an example.
+                                                
